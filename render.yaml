@@ -1,8 +1,7 @@
 services:
   - type: web
-    name: moon-or-dust
+    name: moon-or-dust-bot
     env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python bot.py
     pythonVersion: 3.12.8
-buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    buildCommand: pip install --upgrade pip wheel setuptools && pip install -r requirements.txt
+    startCommand: python bot.py
