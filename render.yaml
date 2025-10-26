@@ -2,7 +2,7 @@ services:
   - type: background
     name: moon-or-dust-bot
     env: python
-    pythonVersion: 3.10.  # Compatible version for aiogram + aiohttp
+    pythonVersion: 3.11.  # Compatible version for aiogram + aiohttp
     buildCommand: "pip install --no-cache-dir -r requirements.txt"
     startCommand: "python bot.py"
     autoDeploy: true
