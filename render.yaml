@@ -1,12 +1,9 @@
 services:
-  - type: web
+  - type: background
     name: moon-or-dust-bot
     env: python
-    plan: free
+    pythonVersion: 3.11
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python bot.py"
-    envVars:
-      - key: BOT_TOKEN
-        fromSecret: BOT_TOKEN
-      - key: ADMIN_CHAT_ID
-        fromSecret: ADMIN_CHAT_ID
+    autoDeploy: true
+    branch: main
