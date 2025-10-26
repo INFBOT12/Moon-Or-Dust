@@ -1,13 +1,7 @@
 services:
   - type: web
-    name: moon-or-dust-bot
+    name: moon-or-dust
     env: python
-    pythonVersion: "3.12.13"          # ✅ Downgrade to Python 3.11
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python main.py"
-    autoDeploy: true
-    plan: free                     # Change if you want a paid plan
-    envVars:
-      - key: BOT_TOKEN
-        fromDatabase: false
-        value: "<BOT_TOKEN>"
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    pythonVersion: 3.12.8
