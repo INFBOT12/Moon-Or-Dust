@@ -1,17 +1,17 @@
-aiogram==3.0.0b7
-aiohttp==3.8.4
-aiofiles==23.1.0
-python-dotenv==1.0.0
-pydantic==1.10.9
-magic-filter==1.0.12
-certifi==2025.10.5
-attrs==25.4.0
-charset-normalizer==3.4.4
-multidict==6.0.4
-async-timeout==4.0.2
-yarl==1.9.2
-aiosignal==1.3.1
-typing-extensions==4.5.0
-idna==3.4
-propcache==0.4.1
-frozenlist==1.3.3
+aiogram==3.0.0b7            # keep the same
+aiohttp>=3.9.5              # upgraded for Python 3.13 support
+aiofiles==23.1.0            # keep the same
+python-dotenv==1.0.0        # keep the same
+pydantic==1.10.9            # keep the same
+magic-filter==1.0.12        # keep the same
+certifi==2025.10.5          # keep the same
+attrs==25.4.0               # keep the same
+charset-normalizer==3.4.4   # keep the same
+multidict>=6.0.4            # upgraded to match aiohttp
+async-timeout==4.0.2        # keep the same
+yarl>=1.9.2                 # upgraded for Python 3.13 support
+aiosignal==1.3.1            # keep the same
+typing-extensions==4.5.0    # keep the same
+idna==3.4                   # keep the same
+propcache==0.4.1            # keep the same
+frozenlist>=1.3.3           # upgraded to match aiohttp
