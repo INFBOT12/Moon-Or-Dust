@@ -4,7 +4,7 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.filters import Command
 
-TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"  # Replace with your bot token
+TOKEN = "BOT_TOKEN"  # Replace with your bot token
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
